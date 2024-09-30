@@ -1,12 +1,27 @@
 <html>
     <body>
         <script>
-            let color=["red","blue","orange","sa","saaa"];
-            color.forEach((ele,i)=> 
+            let number=[1,2,3,4,5];
+            number.forEach((ele,i)=> 
         {
             console.log(ele)
         });
-
+        let new_y=number.map((ele,i) => {
+                return ele*2
+             });
+             let new_z=number.filter((ele,i) => {
+                return ele%2==0
+             });
+             let new_w=number.map((ele,i) => {
+                return ele*3
+             });
+             let new_x=number.filter((ele,i) => {
+                return ele%2!=0
+             });
+             console.log(new_w)
+             console.log(new_x)
+             console.log(new_z)
+             console.log(new_y);
         </script>
     </body>
 </html>
